@@ -177,9 +177,9 @@ tbody tr.drag-over{background:rgba(0,153,216,.12);outline:2px dashed var(--accen
     <div class="header-title">
       <h1>EFB Pilot Apps &amp; Updates</h1>
       <div class="header-meta">
-        <span>VERSIÓN: <strong id="metaVersion">2026-10</strong></span>
+        <span>VERSIÓN: <strong id="metaVersion">2026-11</strong></span>
         <span style="color:rgba(255,255,255,.25)">|</span>
-        <span>FECHA: <strong id="metaDate">OCT 16TH, 2026</strong></span>
+        <span>FECHA: <strong id="metaDate">NOV 2ND, 2026</strong></span>
       </div>
     </div>
   </div>
@@ -363,7 +363,7 @@ const SAMPLE=[
   {id:'11',name:'eCrew',            version:'2026.07.17', status:'authorized',logo:'ecrew.png',color:'#0f4c81'},
   {id:'12',name:'eQRH MAX',         version:'1.0.8',      status:'authorized',logo:'max.png',color:'#2c5364'},
   {id:'13',name:'eQRH NG',          version:'1.0.7',      status:'authorized',logo:'ng.png',color:'#203a43'},
-  {id:'14',name:'Cold Wx Ops',      version:'1.0.5',      status:'authorized',logo:'IconColdWx.png',color:'#1a5276'},
+  {id:'14',name:'Cold Wx Ops',      version:'1.0.7',      status:'authorized',logo:'IconColdWx.png',color:'#1a5276'},
 ];
 
 function loadApps(){
@@ -371,8 +371,8 @@ function loadApps(){
   catch{return JSON.parse(JSON.stringify(SAMPLE));}
 }
 function loadMeta(){
-  try{const d=localStorage.getItem('efb_meta');return d?JSON.parse(d):{version:'2026-10',date:'OCT 16TH, 2026'};}
-  catch{return{version:'2026-10',date:'OCT 16TH, 2026'};}
+  try{const d=localStorage.getItem('efb_meta');return d?JSON.parse(d):{version:'2026-11',date:'NOV 2ND, 2026'};}
+  catch{return{version:'2026-11',date:'NOV 2ND, 2026'};}
 }
 
 let apps=loadApps(), meta=loadMeta(), pilotView=true, dragSrc=null;
